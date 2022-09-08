@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+        <script src="../node_modules/aos/dist/aos.js"></script>  
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/services/jobs-service.js"></script>
+        <script src="js/services/main-services.js"></script>
+        <script src="js/services/user-service.js"></script>
+        <script src="js/services/applier-service.js"></script>
+        <script src="js/applier.js"></script>
+        <script src="js/footer.js"></script>
+        <link rel="stylesheet" href="../public/output.css">
+        <title>Applier review </title>
+        <script>
+       document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration:600
+      });
+    });
+        </script>
+    </head>
+<body>
+  <button id="open-btn"  class="lg:hidden fixed text-[1.5rem] text-gray bg-white mx-2 px-2 mt-2 rounded-md shadow-md z-20"> <i class="fa fa-bars"></i></button>
+    
+  <nav
+  
+  >
+  
+
+</nav>
+<header class="register-header ">
+<h1>Applier Data </h1>
+</header>
+<div class=" flex flex-col justify-center  items-center py-0 lg:px-32">
+   <div class="flex flex-row justify-start p-4 mt-10">
+ <h1 class="font-bold flex-1 text-left">Name <span class="text-right flex-1   pl-5 font-light" id="applierName"></span></h1>
+
+   </div>
+  <div class=" flex justify-start flex-col">
+    <div class="flex flex-row justify-start p-4 ">
+  
+      <h1 class="font-bold flex-1 text-left  ">Email <span class="text-right flex-1   pl-5 font-light" id="applierEmail"></span></h1> 
+    
+        </div>
+        <div class="flex flex-row  justify-start  p-4 ">
+  
+          <h1 class="font-bold  flex-1  text-left w-auto pr-5 ">Phone Number  <span class="text-left flex-1  pl-5 font-light" id="applierPhone"></span></h1>
+            </div>
+        <div class="flex flex-row justify-start  p-4 ">
+  
+          <h1 class="font-bold  flex-1 text-left pr-5 ">Username<span class="text-left flex-1  pl-5 font-light" id="applierUsername"></span></h1> 
+            </div>
+            
+  </div>
+         
+<div class="flex justify-center w-[100%] my-10">   <button  id="acc-btn" class="mr-10 bg-green text-white px-5 py-2 rounded-md hover:opacity-75">Accept <i class="fa fa-check"></i></button>  <button  id="rej-btn" class="bg-red text-white px-5 py-2 rounded-md hover:opacity-75">Reject <i class="fa fa-close"></i></button> </div>
+<footer  >
+
+  </footer> 
+
+</body>
+</html>

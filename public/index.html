@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+    <script src="../node_modules/aos/dist/aos.js"></script>  
+    <script src="js/navbar.js"></script>
+     <script src="./js/app.js"></script>
+     <script src="js/footer.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../public/output.css">
+    <title>Job Search</title>
+    <script>
+   document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    duration:600,
+    offset:0
+  });
+});
+    </script>
+</head>
+<body >
+  
+  <header
+  id="header" 
+  >
+  <button id="open-btn"  class="lg:hidden fixed text-[1.5rem] text-gray bg-white mx-2 px-2 mt-2 rounded-md shadow-md z-20"> <i class="fa fa-bars"></i></button>
+    
+  <nav
+  
+  >
+ 
+    
+     <h1  >Job Search </h1>
+<ul >
+   <span id="close-btn" class="hidden xx:static fixed text-[1.5rem] text-gray bg-white px-2 mt-2 right-0 rounded-md shadow-md z-20"> <i class="fa fa-times"></i></span>
+    <li
+    class=" text-white "
+    ><a href="">Login</a></li>
+    <li><a href="post-job.html">Register</a></li>
+
+    <li class=".am-company" ><a href="">am company</a></li>
+
+  <li>
+    <button
+    class="post-job-btn" 
+    ><a href=""
+       >post a job</a></button>
+  </li>
+
+</ul>
+
+</nav>
+<div class="container">
+  <div>
+<h6 data-aos="zoom-in">get start</h6>
+<h1 data-aos="slide-right">the Easiest way  to get your new job </h1>
+<span class="btn-container">
+  <button><a href="all-jobs.html">Brows Jobs</a></button>
+</span>
+  </div>
+
+  <div >
+    <figure class="email"  data-aos="slide-left" data-aos-duration="1000">
+      <img  src="../src/assets/emailsvg.svg" alt="">
+    </figure>
+  <figure class="search" data-aos="slide-left" data-aos-duration="800">
+    <img src="../src/assets/searchIcon.svg" alt="">
+  </figure>
+ 
+  <figure class="laptop"data-aos="slide-left">
+    <img src="../src/assets/laptop.svg" alt="">
+  </figure>
+
+  </div>
+</div>
+  </header> 
+  <section
+  id="feature"
+  >
+<div data-aos="slide-right">
+<h1>
+  Browse some features jobs</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde dolores non quam tenetur debitis enim. Dicta repudiandae deserunt laborum architecto.</p>
+<div class="btn-container">
+  <button><a href="all-jobs.html">find your future job</a></button>
+</div>
+</div>
+<div class="slider-container"> 
+  <div class="slider">
+<div class="box">
+  
+
+
+</div>
+
+
+  </div>
+   <div class="wrapper">
+    <ul>
+   
+    </ul>
+    <div class="btn-container" data-aos="zoom-in" data-aos-duration="1000"> <button id="left-arrow"><i class="fa fa-angle-left"></i></button>
+
+  <button id="right-arrow"><i class="fa fa-angle-right"></i></button>
+
+  
+   </div>
+  
+
+  </div>
+</div>
+</section>
+<section
+  id="get-job"
+  >
+<div class="mb-20">
+<h1  data-aos="slide-right" data-aos-duration="800">
+Get +8000 talented people </h1>
+  <p  data-aos="slide-right" data-aos-duration="1000" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde dolores non quam tenetur debitis enim. Dicta repudiandae deserunt laborum architecto.</p>
+<div class="btn-container">
+  <button  data-aos="zoom-in"  data-aos-delay="800"><a href="all-jobs.html">view more</a> </button>
+</div>
+</div>
+<div class="talented-people "> 
+  
+
+<div class=" rotate-[45deg] overflow-hidden">
+  <div class="person small " data-aos="zoom-in"  data-aos-delay="400">
+    <img src="../src/assets/person1.jpg" alt="">
+  </div>
+  
+  <div class="person " data-aos="zoom-in"  data-aos-delay="600">
+    <img src="../src/assets/person2.jpg" alt="">
+  </div>
+</div>
+  <div class=" rotate-[45deg] overflow-hidden mt-[-180px] ml-[200px] ">
+    <div class="person  " data-aos="zoom-in"  data-aos-delay="800">
+      <img src="../src/assets/person3.jpg" alt="">
+    </div>
+    
+    <div class="person  small " data-aos="zoom-in"  data-aos-delay="1000">
+      <img src="../src/assets/person4.jpg" alt="">
+
+    
+</div>
+</div>
+</div>
+</section>
+
+<section id="featured-jobs" >
+<div class="flex-1">
+  <div class="mobile-img" data-aos="slide-left">
+    <img src="../src/assets/mobile.svg" alt="">
+  </div>
+</div>
+<div class="flex-2 featured" data-aos="slide-right">
+  <h1>Most amazing features jobs </h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel eius, deleniti magni vitae explicabo consequatur.</p>
+<button><a href="all-jobs.html">view more</a></button>
+</div>
+
+  <div class="bg-gradient-to-br from-teal-100 h-[300px] mt-[100px] absolute w-[100%]" data-aos="zoom-in" data-aos-delay="300"></div>
+</section>
+<section id="news-letter" data-aos="zoom-in">
+  <h1 >Our newsletter</h1>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, iure?</p>
+  <div class="email-input md:max-w-[320px]">
+    <input type="text" placeholder="Enter Your Email Here !"><button>subseribe <i class="fa fa-caret-down  "></i></button>
+  </div>
+</section>
+<footer>
+
+</footer>
+<div class="loading w-[100%] h-[100%] absolute bg-black opacity-50 z-40 top-0 left-0 flex justify-center items-start" >
+  <div class="lds-spinner top-80 fixed"><div></div><div></div><div></div>
+</div>
+</body>
+</html>

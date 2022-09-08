@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+        <script src="../node_modules/aos/dist/aos.js"></script>  
+         <script src="js/app.js"></script>
+             <script src="js/navbar.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="../public/output.css">
+        <script src="js/services/main-services.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="js/services/jobs-service.js"></script>
+        <script src="js/services/company-service.js"></script>
+        <script src="js/jobs.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+           AOS.init({
+             duration:600
+           });
+         });
+     
+             </script>
+        <title>Job Search</title>
+ 
+    </head>
+<body>
+  
+  <button id="open-btn"  class="lg:hidden fixed text-[1.5rem] text-gray bg-white mx-2 px-2 mt-2 rounded-md shadow-md z-20"> <i class="fa fa-bars"></i></button>
+    
+    <nav
+  
+  >
+  
+</nav>
+<header class="jobs-header ">
+  
+<h1>All Jobs </h1>
+<div class="input-search" data-aos="fade-in">
+    <i class=" fa fa-search left-2 text-[1.2rem] text-gray"></i>
+    <input type="text " placeholder="Search Job">
+  </div>
+</header>
+<div class="">
+  <h1 class="px-3 text-[2rem]">Filterd by </h1>
+    <div class="jobs-box">
+
+      
+<div  class="filter ">
+   
+   <div class="pl-2"  >
+ 
+        <div  id="hours">
+          <h1> Hours </h1>
+          <div >
+            <input type="radio" value="part" name="hours" id="">  <span class="ml-1">Part Time</span>
+            </div>
+            <div >
+              <input type="radio" value="full" name="hours" id="">  <span class="ml-1">Full Time</span>
+              </div>
+        </div>
+   </div>
+   <div id="city" class="pl-2">
+    <h1> City </h1>
+    
+
+   </div>
+</div>
+<div class="flex flex-1 overflow-x-hidden" id="jobs">
+  
+   
+
+</div>
+    </div>
+</div>
+<footer>
+ 
+</footer>
+<div class="loading w-[100%] h-[100%] absolute bg-black opacity-50 z-40 top-0 left-0 flex justify-center items-start" >
+  <div class="lds-spinner top-80 fixed mt-100"><div></div><div></div><div></div>
+</div>
+</body>
+</html>
