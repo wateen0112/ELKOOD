@@ -1,12 +1,9 @@
 
 var i =1 ; 
 var y =3 ;
-$(window).on('load', function () {
-    $('body').addClass('relative')
-    $('.loading').show();
-});
+
 $(document).ready(()=>{
-    $('.loading').hide();
+  
    
 $('#left-arrow').click(()=>{
 i = i-1;
