@@ -7,7 +7,7 @@ $(document).ready(()=>{
   window.location.href = '/public';
 } 
 
-$('[name="btn"]').click((e)=>{
+$('[name="c-register-btn"]').click((e)=>{
   e.preventDefault();
   $('#show1').click(toggleShow('password','show1'));
   $('#show2').click(toggleShow('c_password','show2'));

@@ -557,9 +557,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1030px){
   .container{
-    max-width: 1024px;
+    max-width: 1030px;
   }
 }
 
@@ -575,7 +575,20 @@ video {
   }
 }
 
-@media (min-width: 1024px){
+.animation-container{
+  display: flex;
+  min-height: 500px;
+  flex: 1 1 0%;
+}
+
+@media (max-width: 1000px){
+  .animation-container{
+    min-height: 200px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1030px){
   section{
     overflow: hidden;
   }
@@ -586,7 +599,7 @@ header{
   width: 100%;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   header{
     min-height: 500px;
     padding: 0px;
@@ -621,7 +634,7 @@ nav{
   padding-bottom: 26px;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   nav{
     position: fixed;
     z-index: 50;
@@ -634,8 +647,8 @@ nav{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
     padding: 0px;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-bottom: 1.25rem;
     --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -643,7 +656,7 @@ nav{
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1030px){
   nav{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -655,11 +668,11 @@ nav ul{
   width: auto;
   flex: 1 1 0%;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 10rem;
+  justify-content: flex-start;
+  padding-right: 0px;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   nav ul{
     flex-direction: column;
     align-items: flex-start;
@@ -668,7 +681,7 @@ nav ul{
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1030px){
   nav ul{
     justify-content: flex-start;
     padding-right: 0px;
@@ -680,7 +693,7 @@ nav ul li{
   margin-right: 0.5rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   nav ul li{
     padding-left: 0px;
     padding-right: 0px;
@@ -702,7 +715,7 @@ nav h1{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   nav h1{
     width: 100%;
     padding-left: 0px;
@@ -712,7 +725,7 @@ nav h1{
   }
 }
 
-@media (max-width: 1030px){
+@media (min-width: 1030px){
   nav h1{
     padding-left: 0px;
   }
@@ -739,7 +752,7 @@ nav h1{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .post-job-btn{
     margin-top: 1.25rem;
     padding-left: 1.25rem;
@@ -758,7 +771,7 @@ nav h1{
   padding-right: 8rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .container{
     flex-direction: column;
     padding-left: 2.5rem;
@@ -775,7 +788,7 @@ nav h1{
   justify-content: flex-start;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .container div{
     min-width: 100%;
     --tw-text-opacity: 1;
@@ -812,8 +825,9 @@ header .container div h6{
   opacity: 0.7;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   header .container div h6{
+    width: 100%;
     text-align: center;
     --tw-text-opacity: 1;
     color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -828,14 +842,11 @@ header .container div h1{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   header .container div h1{
     margin-bottom: 2.5rem;
     display: flex;
     width: 100%;
-    --tw-scale-x: .5;
-    --tw-scale-y: .5;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     text-align: center;
@@ -866,9 +877,10 @@ header .container div .input-search , .jobs-header .input-search{
   justify-content: center;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .btn-container{
     display: flex;
+    min-height: 100px;
     width: 100%;
     flex-direction: row;
     align-items: center;
@@ -883,13 +895,12 @@ header .container div .input-search , .jobs-header .input-search{
   height: 400px;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .laptop{
     left: 10%;
+    top: 0px;
+    height: auto;
     width: 80%;
-    --tw-translate-x: -50%;
-    --tw-translate-y: -50%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 
@@ -902,7 +913,7 @@ header .container div .input-search , .jobs-header .input-search{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .email{
     top: 5rem;
     right: 15rem;
@@ -920,7 +931,7 @@ header .container div .input-search , .jobs-header .input-search{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .search{
     top: 0px;
     left: 5rem;
@@ -937,9 +948,9 @@ header .container div .input-search , .jobs-header .input-search{
   padding-right: 8rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   #feature , #get-job,  #reviews{
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -950,7 +961,7 @@ header .container div .input-search , .jobs-header .input-search{
   flex: 1 1 0%;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   #feature div ,  #get-job div{
     width: 100%;
   }
@@ -963,10 +974,11 @@ header .container div .input-search , .jobs-header .input-search{
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   #feature div h1 ,  #get-job div h1 , #reviews div h1 , #featured-jobs div h1, #news-letter h1{
     margin-bottom: 1.25rem;
     width: 100%;
+    justify-content: flex-start;
     text-align: center;
     font-size: 1.5rem;
   }
@@ -978,14 +990,14 @@ header .container div .input-search , .jobs-header .input-search{
   color: rgb(39 52 68 / var(--tw-text-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   #feature div p ,  #get-job div p  , #news-letter p{
     padding: 0px;
     text-align: center;
   }
 }
 
-@media (max-width: 1030px){
+@media (min-width: 1030px){
   #feature div p ,  #get-job div p  , #news-letter p{
     padding-right: 0px;
   }
@@ -1019,7 +1031,7 @@ header .container div .input-search , .jobs-header .input-search{
   padding-left: 160px;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .slider-container{
     padding: 0px;
   }
@@ -1096,6 +1108,12 @@ header .container div .input-search , .jobs-header .input-search{
   margin-top: 200px;
 }
 
+@media (max-width: 1000px){
+  #get-job{
+    margin-top: 0px;
+  }
+}
+
 #get-job .talented-people{
   display: flex;
   flex-direction: column;
@@ -1104,14 +1122,15 @@ header .container div .input-search , .jobs-header .input-search{
   padding-right: 10rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   #get-job .talented-people{
     --tw-scale-x: .75;
     --tw-scale-y: .75;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    justify-content: center;
     padding: 0px;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -1181,120 +1200,6 @@ header .container div .input-search , .jobs-header .input-search{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-#reviews{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-@media (max-width: 940px){
-  #reviews{
-    width: 100%;
-  }
-}
-
-#reviews div:first-child{
-  /* @apply  flex-1 justify-start items-center  flex flex-col pr-20 w-[30%]  md:pr-0 */
-}
-
-.reviewimg{
-  background: url(../src/assets/reviewimg.svg);
-  background-size:contain;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 600px
-}
-
-@media (max-width: 940px){
-  .reviewimg{
-    height: 600px;
-    width: 100%;
-  }
-}
-
-.review-place{
-  position: relative;
-  flex: 1 1 0%;
-}
-
-.reviewimg{
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-@media (max-width: 940px){
-  .reviewimg{
-    align-items: center;
-  }
-}
-
-.review-box{
-  margin: 0px;
-  margin-top: 6rem;
-  display: flex;
-  height: 400px;
-  width: 400px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0px;
-}
-
-@media (max-width: 940px){
-  .review-box{
-    margin-top: 0px;
-    height: 400px;
-  }
-}
-
-.review-box div{
-  height: 80px;
-  width: 80px;
-  overflow: hidden;
-  border-radius: 9999px;
-  border-width: 5px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(211 220 230 / var(--tw-border-opacity));
-}
-
-@media (max-width: 940px){
-  .rev-img{
-    margin-top: -100px;
-  }
-}
-
-.review-box div img{
-  height: 100%;
-  width: 100%;
-}
-
-.review-box h2{
-  margin-top: 0.75rem;
-  font-size: 22px;
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(211 220 230 / var(--tw-text-opacity));
-}
-
-.review-box p{
-  margin-top: 0.75rem;
-  text-align: center;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media (max-width: 940px){
-  .review-box p{
-    margin-top: 0px;
-    width: 300px;
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
-  }
-}
-
 #featured-jobs{
   position: relative;
   z-index: 40;
@@ -1306,10 +1211,11 @@ header .container div .input-search , .jobs-header .input-search{
   justify-content: center;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   #featured-jobs{
     min-height: 0px;
     flex-direction: column;
+    padding-top: 5rem;
   }
 }
 
@@ -1321,7 +1227,7 @@ header .container div .input-search , .jobs-header .input-search{
   padding-right: 10rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .featured{
     width: 100%;
     padding-left: 2.5rem;
@@ -1336,7 +1242,7 @@ header .container div .input-search , .jobs-header .input-search{
   margin-top: 5rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .mobile-img{
     margin-top: -200px;
   }
@@ -1370,7 +1276,7 @@ header .container div .input-search , .jobs-header .input-search{
   padding-right: 8rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   #news-letter{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1384,7 +1290,7 @@ header .container div .input-search , .jobs-header .input-search{
   color: rgb(132 146 166 / var(--tw-text-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   #news-letter p, footer p{
     width: 100%;
     text-align: center;
@@ -1440,7 +1346,7 @@ footer{
   border-bottom-color: rgb(132 146 166 / var(--tw-border-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   footer{
     margin-left: 0px;
     margin-right: 0px;
@@ -1454,7 +1360,7 @@ footer div{
   flex: 1 1 0%;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   footer h1{
     margin-top: 1.25rem;
     text-align: center;
@@ -1466,7 +1372,7 @@ footer p{
   padding-right: 9rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   footer p{
     width: 100%;
     padding-right: 0px;
@@ -1482,7 +1388,7 @@ footer ul{
   flex-wrap: nowrap;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   footer ul{
     align-items: center;
     justify-content: center;
@@ -1534,7 +1440,7 @@ footer ul li i{
   text-align: center;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .register-header , .jobs-header{
     padding-left: 0px;
   }
@@ -1550,7 +1456,7 @@ footer ul li i{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .register-header h1, .jobs-header h1{
     padding: 0px;
     font-size: 2rem;
@@ -1581,7 +1487,7 @@ footer ul li i{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .register-box{
     padding-left: 0px;
     padding-right: 0px;
@@ -1593,7 +1499,7 @@ footer ul li i{
   font-size: 1.7rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .register-box h1{
     font-size: 1.4rem;
   }
@@ -1636,7 +1542,7 @@ footer ul li i{
   color: rgb(19 206 102 / var(--tw-text-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .register-box form div i{
     right: 4rem;
   }
@@ -1663,7 +1569,7 @@ footer ul li i{
   outline-offset: 2px;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .register-box form input{
     margin-left: 3rem;
     margin-right: 3rem;
@@ -1706,7 +1612,7 @@ footer ul li i{
   padding-right: 0.5rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-header .input-search{
     max-width: 300px;
   }
@@ -1719,7 +1625,7 @@ footer ul li i{
   outline-offset: 2px;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-header .input-search input , textarea{
     max-width: 280px;
   }
@@ -1737,7 +1643,7 @@ footer ul li i{
   justify-content: flex-start;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-box{
     flex-direction: column;
     padding-left: 1.25rem;
@@ -1751,7 +1657,7 @@ footer ul li i{
   flex-direction: column;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-box .filter{
     display: flex;
     width: auto;
@@ -1764,7 +1670,7 @@ footer ul li i{
   font-size: 1.5rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-box h1{
     font-size: 1rem;
     font-weight: 700;
@@ -1797,7 +1703,7 @@ footer ul li i{
   padding-top: 2.5rem;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-box #jobs{
     padding: 0px;
   }
@@ -1814,7 +1720,7 @@ footer ul li i{
   justify-content: flex-start;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-box #jobs div{
     flex-direction: column;
   }
@@ -1829,7 +1735,7 @@ footer ul li i{
   color: rgb(126 91 239 / var(--tw-text-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-box #jobs div h1{
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -1858,7 +1764,7 @@ footer ul li i{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-box #jobs div .details{
     width: 100%;
     padding-left: 1.25rem;
@@ -1877,7 +1783,7 @@ footer ul li i{
   color: rgb(52 85 235 / var(--tw-text-opacity));
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-box #jobs div .details div{
     display: flex;
     flex-direction: row;
@@ -1890,7 +1796,7 @@ footer ul li i{
   font-weight: 600;
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-box #jobs div .details div h4{
     width: 100%;
   }
@@ -1913,7 +1819,7 @@ footer ul li i{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (max-width: 940px){
+@media (max-width: 1000px){
   .jobs-box #jobs div span{
     width: auto;
     padding-left: 1.25rem;
@@ -1957,6 +1863,10 @@ footer ul li i{
   left: 0.5rem;
 }
 
+.right-0{
+  right: 0px;
+}
+
 .top-0{
   top: 0px;
 }
@@ -1969,36 +1879,8 @@ footer ul li i{
   top: 200px;
 }
 
-.top-80{
-  top: 20rem;
-}
-
-.right-0{
-  right: 0px;
-}
-
-.top-32{
-  top: 8rem;
-}
-
-.left-\[70\%\]{
-  left: 70%;
-}
-
-.bottom-\[160px\]{
-  bottom: 160px;
-}
-
-.left-\[40\%\]{
-  left: 40%;
-}
-
 .z-20{
   z-index: 20;
-}
-
-.z-40{
-  z-index: 40;
 }
 
 .mx-2{
@@ -2013,10 +1895,6 @@ footer ul li i{
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .ml-1{
@@ -2043,12 +1921,12 @@ footer ul li i{
   margin-left: 200px;
 }
 
-.mt-32{
-  margin-top: 8rem;
-}
-
 .mt-\[100px\]{
   margin-top: 100px;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .flex{
@@ -2057,6 +1935,10 @@ footer ul li i{
 
 .hidden{
   display: none;
+}
+
+.h-\[300px\]{
+  height: 300px;
 }
 
 .h-\[100\%\]{
@@ -2071,28 +1953,12 @@ footer ul li i{
   height: 100px;
 }
 
-.h-\[70px\]{
-  height: 70px;
-}
-
-.h-\[50px\]{
-  height: 50px;
-}
-
-.h-\[300px\]{
-  height: 300px;
-}
-
-.h-\[600px\]{
-  height: 600px;
-}
-
-.h-\[400px\]{
-  height: 400px;
-}
-
 .min-h-\[100vh\]{
   min-height: 100vh;
+}
+
+.w-auto{
+  width: auto;
 }
 
 .w-\[100\%\]{
@@ -2101,30 +1967,6 @@ footer ul li i{
 
 .w-\[40\%\]{
   width: 40%;
-}
-
-.w-\[50\%\]{
-  width: 50%;
-}
-
-.w-\[100px\]{
-  width: 100px;
-}
-
-.w-\[70px\]{
-  width: 70px;
-}
-
-.w-\[50px\]{
-  width: 50px;
-}
-
-.w-auto{
-  width: auto;
-}
-
-.w-\[400px\]{
-  width: 400px;
 }
 
 .min-w-\[280px\]{
@@ -2152,10 +1994,6 @@ footer ul li i{
   flex-direction: column;
 }
 
-.items-start{
-  align-items: flex-start;
-}
-
 .items-center{
   align-items: center;
 }
@@ -2166,10 +2004,6 @@ footer ul li i{
 
 .justify-center{
   justify-content: center;
-}
-
-.justify-around{
-  justify-content: space-around;
 }
 
 .overflow-hidden{
@@ -2184,25 +2018,12 @@ footer ul li i{
   border-radius: 0.375rem;
 }
 
-.rounded-full{
-  border-radius: 9999px;
-}
-
-.border-\[5px\]{
-  border-width: 5px;
-}
-
 .border-\[1px\]{
   border-width: 1px;
 }
 
 .border-solid{
   border-style: solid;
-}
-
-.border-gray-light{
-  --tw-border-opacity: 1;
-  border-color: rgb(211 220 230 / var(--tw-border-opacity));
 }
 
 .border-gray{
@@ -2215,11 +2036,6 @@ footer ul li i{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-green{
   --tw-bg-opacity: 1;
   background-color: rgb(19 206 102 / var(--tw-bg-opacity));
@@ -2228,6 +2044,11 @@ footer ul li i{
 .bg-red{
   --tw-bg-opacity: 1;
   background-color: rgb(156 6 6 / var(--tw-bg-opacity));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-br{
@@ -2247,16 +2068,6 @@ footer ul li i{
   padding-right: 0.5rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2267,28 +2078,30 @@ footer ul li i{
   padding-bottom: 0px;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pl-2{
   padding-left: 0.5rem;
-}
-
-.pr-2{
-  padding-right: 0.5rem;
-}
-
-.pr-5{
-  padding-right: 1.25rem;
 }
 
 .pl-5{
   padding-left: 1.25rem;
 }
 
-.text-left{
-  text-align: left;
+.pr-5{
+  padding-right: 1.25rem;
 }
 
-.text-center{
-  text-align: center;
+.text-left{
+  text-align: left;
 }
 
 .text-right{
@@ -2363,6 +2176,10 @@ footer ul li i{
   background: url(../src/assets/mainbg.svg);
   background-size: contain    ;
   background-repeat: no-repeat;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /*-----loading style and animations ------*/
@@ -2496,33 +2313,15 @@ footer ul li i{
   opacity: 0.75;
 }
 
-@media (max-width: 940px){
-  .md\:hidden{
-    display: none;
-  }
-
+@media (max-width: 1000px){
   .md\:max-w-\[320px\]{
     max-width: 320px;
   }
 }
 
-@media (max-width: 1030px){
-  .xx\:static{
-    position: static;
-  }
-}
-
-@media (min-width: 1024px){
+@media (min-width: 1030px){
   .lg\:hidden{
     display: none;
-  }
-
-  .lg\:w-\[50\%\]{
-    width: 50%;
-  }
-
-  .lg\:w-\[25\%\]{
-    width: 25%;
   }
 
   .lg\:px-32{

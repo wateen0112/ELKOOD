@@ -32,10 +32,7 @@
 <body>
   <button id="open-btn"  class="lg:hidden fixed text-[1.5rem] text-gray bg-white mx-2 px-2 mt-2 rounded-md shadow-md z-20"> <i class="fa fa-bars"></i></button>
     
-  <nav
-  
-  >
- 
+  <nav>
 </nav>
 <header class="register-header ">
 <h1>Create New Job </h1>
@@ -61,7 +58,7 @@
        </div>
     <div>
         <span id="hourserr"></span>
-        <input type="text" name="hours" placeholder="Number  Of Hours "> 
+        <input type="number"step="1"  min="1" max="120"  pattern="\d*"   inputmode="numeric" name="hours" placeholder="Number  Of Hours "> 
     </div>
  
     <div>

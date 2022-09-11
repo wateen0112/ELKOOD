@@ -18,12 +18,12 @@ if(checkEmpty(title)==true) {
 }
 else $('#titleerr').html('');
 if (checkEmpty(hours)) {
-    $('#hourserr').html('description Required !');
+    $('#hourserr').html('hours Required !');
     errs++;
  }else $('#hourserr').html('');
 
  if (checkEmpty(description)) {
-    $('#descriptionerr').html('hours Required !');
+    $('#descriptionerr').html('descrtiption is  Required !');
     errs++;
  }else $('#hourserr').html('');
 

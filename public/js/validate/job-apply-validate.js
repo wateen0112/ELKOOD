@@ -12,11 +12,15 @@ $('[name="apply-btn"]').click((e)=>{
 
 if(checkEmpty(phone)) {
     $('#phoneerr').html('phone Required !'); errs++;
+    
 }
+else $('#phoneerr').html('');
+
 if(validateZip(phone)) {
     $('#phoneerr').html('phone is Invalid !'); errs++;
 }
 else $('#phoneerr').html('');
+
 
 if(checkEmpty(cv)) {
     $('#cverr').html('cv Required !'); errs++;
@@ -27,6 +31,16 @@ else $('#cverr').html('');
     $('#emailerr').html('email Required !'); errs++;
    }else $('#emailerr').html('');
   
+   if (validateEmail(email)){
+    $('#emailerr').html('email isunvalid     !'); errs++;
+   }else $('#emailerr').html('');
+  
+if(checkEmpty(phone)) {
+    $('#phoneerr').html('phone Required !'); errs++;
+    
+}
+else $('#phoneerr').html('');
+
    if(!checkEmpty(phone)&&!checkEmpty(email))errs=0;
 if(errs==0){
  try{

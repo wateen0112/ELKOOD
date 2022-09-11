@@ -12,8 +12,16 @@
     background-repeat: no-repeat;
   
 }
-
+input[type=number] {
+    -moz-appearance: textfield;
+  }
 @layer components {
+
+    .animation-container{
+    @apply min-h-[500px] flex flex-1 md:w-[100%] 
+
+md:min-h-[200px]
+}
     section{
        @apply lg:overflow-hidden;
     }
@@ -28,10 +36,10 @@
         @apply
         w-[100%] flex justify-between flex-row items-center px-10  py-[26px]  lg:px-10 md:justify-start 
         overflow-hidden
-        md:px-5 md:bg-white md:w-[100%] md:p-0 md:m-0 md:fixed md:flex-col    md:z-50 md:items-start md:pb-5 md:shadow-md md:hidden
+        md:px-0 md:bg-white md:w-[100%] md:p-0 md:m-0 md:fixed md:flex-col    md:z-50 md:items-start md:pb-5 md:shadow-md md:hidden
     }
     nav ul  {
-        @apply  flex justify-end items-center  w-auto flex-1 pr-40 md:flex-col md:pr-0 md:justify-start md:items-start lg:pr-0 lg:justify-start 
+        @apply  flex justify-start items-center  w-auto flex-1 pr-0 md:flex-col md:pr-0 md:justify-start md:items-start lg:pr-0 lg:justify-start 
     }
     nav ul li {
 @apply md:text-left mx-2 md:px-0
@@ -43,7 +51,7 @@
         @apply   md:text-black   
     }
     nav h1 {
-        @apply flex-1 pl-20  text-black text-[24px] font-semibold    md:w-[100%] md:text-left md:pl-0 md:text-strong-blue xx:pl-0
+        @apply flex-1 pl-20  text-black text-[24px] font-semibold    md:w-[100%] md:text-left md:pl-0 md:text-strong-blue lg:pl-0
     }
     .post-job-btn{
         @apply bg-blue px-6 py-1 rounded-md shadow-xl text-white hover:scale-105 md:mt-5  md:px-5
@@ -64,23 +72,23 @@
     }
     header .container div h6{ 
 
-        @apply font-semibold text-white capitalize opacity-70   md:text-black  md:text-center
+        @apply font-semibold text-white capitalize opacity-70   md:text-black  md:text-center md:w-[100%]
     }
     header .container div h1{
-        @apply text-white  text-[2rem] font-bold capitalize   md:text-black  md:w-[100%] md:flex  md:text-center md:scale-50 md:px-10 md:mb-10
+        @apply text-white  text-[2rem] font-bold capitalize   md:text-black  md:w-[100%] md:flex  md:text-center  md:px-10 md:mb-10 
     }
     header .container div .input-search ,.jobs-header .input-search{
         @apply bg-white py-2 rounded-md mt-5 shadow-2xl flex items-center
         relative
     }
  .btn-container{
-@apply md:w-[100%] md:flex md:flex-row md:justify-center md:items-center   relative h-[100px] justify-center items-center
+@apply md:w-[100%] md:flex md:flex-row md:justify-center md:items-center   relative h-[100px] justify-center items-center md:min-h-[100px]
     }
 
 
     .laptop {
         @apply   absolute top-[40px]  mt-0 h-[400px]
-  md:left-[10%] md:w-[80%] md:translate-x-[-50%] md:translate-y-[-50%]
+  md:left-[10%]  md:w-[80%]  md:top-0  md:h-auto
     }
  
      .email {
@@ -91,17 +99,17 @@
         @apply absolute   w-[100px]  top-40 left-6  rotate-[80deg]  z-20   md:top-0 md:w-[60px] md:left-20 
     }
 #feature ,#get-job, #reviews{
-    @apply flex justify-center items-center px-32 mb-16 md:flex-row md:flex-wrap md:px-10
+    @apply flex justify-center items-center px-32 mb-16  md:flex-wrap md:px-10  md:flex-col
 }
 
 #feature div , #get-job div {
     @apply flex-1   md:w-[100%]
 }
 #feature div h1 , #get-job div h1 ,#reviews div h1 ,#featured-jobs div h1,#news-letter h1{
-    @apply text-[1.8rem] font-bold text-[#333] md:text-center md:text-[1.5rem] md:mb-5 md:w-[100%]
+    @apply text-[1.8rem] font-bold text-[#333] md:text-center md:text-[1.5rem] md:mb-5 md:w-[100%] md:justify-start
 }
 #feature div p , #get-job div p  ,#news-letter p    {
-    @apply xx:pr-0 pr-60 text-gray-dark md:p-0 md:text-center 
+    @apply lg:pr-0 pr-60 text-gray-dark md:p-0 md:text-center 
 
 }
 #feature div button , #get-job div button,#featured-jobs div button {
@@ -145,10 +153,10 @@
     animation:slide .2s ease-in;
 }
 #get-job{
-    @apply mt-[200px]
+    @apply mt-[200px] md:mt-[0px]
 }
 #get-job .talented-people{
-    @apply flex  flex-col  justify-start items-center pr-40 md:p-0 md:scale-75  md:px-10
+    @apply flex  flex-col  justify-start items-center pr-40 md:p-0 md:scale-75  md:px-0 md:justify-center
 }
 #get-job .talented-people .person {
     @apply w-[140px] h-[140px]  overflow-hidden flex justify-center items-center  m-2 shadow-blue-light rounded-md
@@ -160,12 +168,7 @@
 .small{
     @apply   person  scale-[0.75] 
 }
-#reviews{
-    @apply flex justify-start flex-row flex-wrap md:w-[100%]
-}
-#reviews div:first-child{
-    /* @apply  flex-1 justify-start items-center  flex flex-col pr-20 w-[30%]  md:pr-0 */
-}
+
 .reviewimg{
     background: url(../src/assets/reviewimg.svg);
     background-size:contain;
@@ -197,7 +200,7 @@
     @apply mt-3 text-white  text-center md:text-black md:w-[300px] md:mt-0
 }
 #featured-jobs{
-    @apply min-h-[500px]  relative w-[100%] flex flex-row justify-center items-center  md:flex-col  z-40 md:min-h-0
+    @apply min-h-[500px]  relative w-[100%] flex flex-row justify-center items-center  md:flex-col  z-40 md:min-h-0 md:pt-20
 }
 .featured {
     @apply  justify-start w-[40%] pr-40 z-20 mt-10 md:px-10 md:w-[100%]  md:text-center

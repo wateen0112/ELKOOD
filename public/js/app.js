@@ -3,7 +3,10 @@ var i =1 ;
 var y =3 ;
 
 $(document).ready(()=>{
-  
+  $('input[type=number]').on('input',()=>{
+$('input[type=number]').val($('input[type=number]').val().replace(/[^0-9.]/g, '')) 
+ $('input[type=number]').val($('input[type=number]').val().replace(/(\..*)\./g, '$1'))  ;
+  })
    
 $('#left-arrow').click(()=>{
 i = i-1;

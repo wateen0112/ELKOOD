@@ -7,11 +7,11 @@ module.exports = {
     screens: {
 
 
-      'md': {'max':'940px'},
-      'xx': {'max':'1030px'},
+      'md': {'max':'1000px'},
+     
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1024px',
+      'lg': '1030px',
       // => @media (min-width: 1024px) { ... }
 
       'xl': '1280px',
